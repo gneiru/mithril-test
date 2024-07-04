@@ -7,17 +7,12 @@
   </head>
   <body>
     <script type="module">
-      import ChatWidget from "https://cdn.jsdelivr.net/npm/@branfi.sh/chat-widget";
-
-      ChatWidget.initStandard({
-        chatAppId: "YOUR_CHAT_APP_ID",
+      import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
+      Chatbot.init({
+        chatflowid: "<chatflowid>",
+        apiHost: "http://localhost:3000",
       });
     </script>
-
-    <brainfish-standard-widget
-      style="width: 100%; height: 600px"
-    ></brainfish-standard-widget>
     <div id="app"></div>
-    <script type="module" src="/src/index.ts"></script>
   </body>
 </html>
